@@ -118,6 +118,12 @@
       <p>A callback Function when you click the modal primary button.</p>
     </div>
     <div>
+      <p>showCallback</p>
+      <p><code>Function</code></p>
+      <p></p>
+      <p>A callback function that will be run every time the modal is displayed.</p>
+    </div>
+    <div>
       <p>cancel-text</p>
       <p><code>String</code></p>
       <p>Close</p>

@@ -27,6 +27,7 @@ export default {
   props: {
     backdrop: {type: Boolean, default: true},
     callback: {type: Function, default: null},
+    showCallback: {type: Function, default: null},
     cancelText: {type: String, default: 'Close'},
     effect: {type: String, default: null},
     large: {type: Boolean, default: false},
@@ -85,6 +86,8 @@ export default {
         const body = document.body
         body.style.paddingRight = null
         body.classList.remove('modal-open')
+      } else {
+        if (this.showCallback instanceof Function) this.showCallback()
       }
     }
   }
